@@ -13,14 +13,14 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-//        String json = new RestTemplate().getForObject("https://official-joke-api.appspot.com/jokes/random", String.class);
-//        JsonObject response = JsonParser.parseString(json).getAsJsonObject();
-//        String a = response.get("setup").getAsString();
-//        String b = response.get("punchline").getAsString();
-//        System.out.println(a + ", " + b);
-//        String newjson = new RestTemplate().getForObject("https://official-joke-api.appspot.com/jokes/ten", String.class);
-//        JsonArray newresponse = JsonParser.parseString(newjson).getAsJsonArray();
-//        System.out.println(newresponse.get(5));
+        String json = new RestTemplate().getForObject("https://official-joke-api.appspot.com/jokes/random", String.class);
+        JsonObject response = JsonParser.parseString(json).getAsJsonObject();
+        String a = response.get("setup").getAsString();
+        String b = response.get("punchline").getAsString();
+        System.out.println(a + ", " + b);
+        String newjson = new RestTemplate().getForObject("https://official-joke-api.appspot.com/jokes/ten", String.class);
+        JsonArray newresponse = JsonParser.parseString(newjson).getAsJsonArray();
+        System.out.println(newresponse.get(5));
         String ACCESS_TOKEN = System.getenv("ACCESS_TOKEN");
         String ryan_hero_id = "12";
         String gabe_hero_id = "302";
